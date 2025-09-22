@@ -1,5 +1,5 @@
-// Esta é a função que será chamada quando o botão for clicado (definido no HTML com onclick="somar()").
-function somar() {
+// Esta é a função que será chamada quando o botão for clicado (definido no HTML com onclick="subtrair()").
+function subtrair() {
     // 1. OBTER OS VALORES DOS CAMPOS DE ENTRADA
 
     // document.getElementById('valor1') seleciona o elemento HTML que tem o id 'valor1'.
@@ -26,15 +26,15 @@ function somar() {
         return; // A instrução 'return' para a execução da função aqui.
     }
 
-    // 4. REALIZAR A SOMA
+    // 4. REALIZAR A SUBTRAÇÃO
 
-    // Agora que temos dois números, podemos somá-los com o operador '+'.
-    let resultadoSoma = valor1 + valor2;
+    // Agora que temos dois números, podemos subtraí-los com o operador '-'.
+    let resultadoSubtracao = valor1 - valor2;
 
     // 5. EXIBIR O RESULTADO NA PÁGINA
 
     // document.getElementById('resultado') seleciona o elemento <h2> onde o resultado será exibido.
     // .innerHTML é a propriedade que nos permite alterar o conteúdo HTML dentro daquele elemento.
     // Estamos montando uma frase para exibir o resultado de forma amigável.
-    document.getElementById('resultado').innerHTML = "O resultado da soma é: " + resultadoSoma;
+    document.getElementById('resultado').innerHTML = "O resultado da subtração é: " + resultadoSubtracao;
 }
